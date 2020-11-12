@@ -1,2 +1,2 @@
 # My-JavaScript-Notes
-A repository which contains my JavaScript Notes :star:
+A repository which contains my JavaScript Notes :heart:
