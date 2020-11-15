@@ -53,4 +53,8 @@ We can apply an ID to an HTML element as: <br/>
 
 ```html
 <h1 id="myColoredTag"> hello </h1>
+
 ```
+Each page can have only one element with same id, an id is thus unique.
+
+
