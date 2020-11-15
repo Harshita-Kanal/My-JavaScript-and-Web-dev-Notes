@@ -27,3 +27,30 @@ Element selectors are good, but we may not need to apply the same styles to all 
 i.e. All h1 elements may not be red! <br/>
 There could be situations when only some h1 elements need to be red, here we use more specific Selectors.
 
+## Class selectors
+A class selector looks like this: <br/>
+```css
+.myColoredTag{
+color: red;
+}
+```
+We apply a class to an HTML element as: <br/>
+```html
+<h1 class="myColoredTag"> hello </h1>
+```
+In this case, the same set of styles would be applied to all the elements having the same class name.
+This could be considered as one of the most used tags, as it can later help you to use various CSS frameworks, example: bootstrap and apply framework specific styles.
+
+## ID Selectors
+An ID selector looks like this: <br/>
+
+```css
+#myColoredTag{
+color: red;
+}
+```
+We can apply an ID to an HTML element as: <br/>
+
+```html
+<h1 id="myColoredTag"> hello </h1>
+```
