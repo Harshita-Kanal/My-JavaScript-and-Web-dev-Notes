@@ -5,4 +5,5 @@ a simple google search gives you: <br/>
 *__Pseudo: not genuine; spurious or sham.__* <br/>
 
 A pseudo class is basically a pseudo state of element which can be later targeted with CSS.
-They are always preceded by a `:`. Some examples could be
+They are always preceded by a `:`. Some examples could be `:visited`, `:hover` etc.
+
