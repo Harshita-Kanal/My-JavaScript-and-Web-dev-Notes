@@ -14,3 +14,13 @@ h1:hover {
 color:blue;
 }
 ```
+Let us discuss what this codeblock does, on hovering over the h1, the color of 
+h1 changes to blue.<br/>
+ And this happens because we have applied a pseudo class to it.
+So what the pseudo class essentially does is that it let's us apply styles to a particular element
+ not only in relation to the content of the document tree, but also in relation to external factors.
+<br/>
+These external factors could be hovering of a mouse, when a link is clicked or visited, 
+A form element is checked, etc.
+
+## How do they work?
