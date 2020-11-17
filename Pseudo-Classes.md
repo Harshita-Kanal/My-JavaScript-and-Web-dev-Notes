@@ -74,6 +74,18 @@ color: red;
 Here all disabled input fields in the form would turn red.
 
 ### :visited
+Whenever a link is already clicked or visited, it can be indicated by the `:visited` 
+pseudo class.
+
+Consider this as an example:
+```css
+a:visited{
+color: yellow;
+}
+```
+Here all visited links would turn yellow.
+
+### :hover
 
 
 
