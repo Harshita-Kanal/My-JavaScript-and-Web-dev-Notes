@@ -43,7 +43,37 @@ Let's study each one of them in detail with examples.
 
 ## Dynamic Pseudo Classes
 Dynamic pseudo classes include examples such as `:hover`, `:visited`, `:active` etc.
+### :active
+Consider a link element:
+```html
+<a href = "https://github.com/Harshita-Kanal">My GitHub</a>
+```
+This will give you a link.
 
+Now consider the following CSS block:
+```css
+a:active{
+color: yellow;
+}
+```
+This pseudo class selector will select the link while it is being activated.This means when it is being clicked on
+or otherwise activated. <br/> For example, for the “pressed” state of a button-style link.
+And change its color to yellow by applying the corresponding CSS styles to the selected item.
+
+
+### :disabled
+An element is disabled if it cannot be activated, i.e. it cannot be clicked upon or typed into, selected etc.
+A disabled pseudo class would help in selecting elements in that state.
+
+Consider this as an example:
+```css
+input[type = "text"]:disabled{
+color: red;
+}
+```
+Here all disabled input fields in the form would turn red.
+
+### :visited
 
 
 
