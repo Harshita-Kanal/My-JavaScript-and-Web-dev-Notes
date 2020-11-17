@@ -2,7 +2,7 @@
 Before getting started with pseudo classes, let us first understand what the word pseudo means,
 a simple google search gives you: <br/>
 
-*__Pseudo: not genuine; spurious or sham.__* <br/>
+ *Pseudo: not genuine; spurious or sham.* <br/>
 
 A pseudo class is basically a pseudo state of element which can be later targeted with CSS.
 They can be used to target and style those elements which cannot be targeted with normal CSS classes or Id.
@@ -40,6 +40,9 @@ Pseudo classes can be divided into two categories:
 * Dynamic Pseudo Classes <br/>
 
 Let's study each one of them in detail with examples.
+
+## Dynamic Pseudo Classes
+Dynamic pseudo classes include examples such as `:hover`, `:visited`, `:active` etc.
 
 
 
