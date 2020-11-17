@@ -38,6 +38,7 @@ example, when they are hovered upon.
 Pseudo classes can be divided into two categories:
 * Structural Pseudo Classes
 * Dynamic Pseudo Classes <br/>
+
 Let's study each one of them in detail with examples.
 
 
