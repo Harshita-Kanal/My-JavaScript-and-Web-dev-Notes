@@ -89,5 +89,37 @@ Here all visited links would turn yellow.
 
 
 
+## Structural Pseudo Classes
+Structural pseudo classes include examples such as  `:first-child`,
+`:nth-of-type`, `:last-child` etc.
+
+### :first-child
+It represents the first child among a series of siblings.
+
+Consider the following example:
+```html
+<ul>
+ <li>This is selected<li>
+ <li>This is not selected<li>
+ <li>This is not selected<li>
+</ul>
+```
+If we consider the following CSS block:
+```css
+li:first-child{
+color: red;
+}
+```
+This will select the first li under the ul tag and apply the
+required styles on it.
+
+
+
+
+
+
+
+
+
 
 
