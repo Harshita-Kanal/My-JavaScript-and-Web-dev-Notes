@@ -210,7 +210,7 @@ h1:only-of-type{
 color: red;
 }
 ```
-This will select the first `h1` inside the `p` tag and turn 
+This will select the first `h1`, which is the only `h1` child inside the `p` tag and turn 
 it red.
 
 
