@@ -98,6 +98,24 @@ color: yellow;
 This will change the color of a `p` element when it is hovered upon, i.e the 
 mouse is moved over it
 
+### :required
+This pseudo class is used to represent any input item or form item that is marked as required, i.e. has the required attribute set.
+
+Consider this example:
+
+```html
+<input type = "text" required >
+```
+
+Consider the following CSS block:
+
+```css
+input:required{
+color: red;
+}
+```
+This would make all inputs which have required attribute set as red.
+
 
 
 ## Structural Pseudo Classes
@@ -213,7 +231,7 @@ color: red;
 This will select the first `h1`, which is the only `h1` child inside the `p` tag and turn 
 it red.
 
-
+### Other Pseudo Classes
 
 
 
