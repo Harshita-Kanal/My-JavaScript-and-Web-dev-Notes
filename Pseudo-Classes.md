@@ -191,6 +191,27 @@ ul li:nth-of-type(1) {
 }
 ```
 
+### :only-of-type
+This represents any child element which is the unique child if the parent element.
+child of it's parent.
+Consider an example:
+```html
+<p>
+ <h1>Opengenus Foundation </h1>
+ <p>Hello all</p>
+ <p>This is Opengenus Foundation</p>
+</p>
+ 
+```
+
+Consider the following CSS block:
+```css
+h1:only-of-type{
+color: red;
+}
+```
+This will select the first `h1` inside the `p` tag and turn 
+it red.
 
 
 
