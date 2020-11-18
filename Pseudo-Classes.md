@@ -86,6 +86,17 @@ color: yellow;
 Here all visited links would turn yellow.
 
 ### :hover
+Whenever something is hovered upon, it is indicated by this pseudo class.
+It could be interpreted as mouse over. <br/>
+
+Consider the following CSS block:
+```css
+p: hover{
+color: yellow;
+}
+```
+This will change the color of a `p` element when it is hovered upon, i.e the 
+mouse is moved over it
 
 
 
