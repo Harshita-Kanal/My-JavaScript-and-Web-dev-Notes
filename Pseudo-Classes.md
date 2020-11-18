@@ -231,7 +231,15 @@ color: red;
 This will select the first `h1`, which is the only `h1` child inside the `p` tag and turn 
 it red.
 
-### Other Pseudo Classes
+## Pseudo Elements: A primer
+We discussed in detail about pseudo Classes, let's make a mention about pseudo elements and their difference,
+Pseudo Elements help in creating markup elements not originally present in the HTML markup and 
+help you in creating cool effects with minimal markup.
+Some examples are: `::after`, `::before` etc.
+A pseudo class as discussed help us in selecting certain elements 
+based on its state or condition. A pseudo element helps us in creating elements not 
+originally a part of the document tree.
+
 
 
 
