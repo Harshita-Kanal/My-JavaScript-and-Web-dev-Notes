@@ -117,12 +117,35 @@ Consider the following example:
 ```
 If we consider the following CSS block:
 ```css
-li:first-child{
+ul li:first-child{
 color: red;
 }
 ```
 This will select the first li under the ul tag and apply the
 required styles on it.
+
+### :last-child
+It represents the last child among a series of siblings.
+
+Consider the same example:
+```html
+<ul>
+ <li>This is not selected<li>
+ <li>This is not selected<li>
+ <li>This is selected<li>
+</ul>
+```
+This will select the last li under the ul tag and apply the
+required styles on it
+
+If we consider the following CSS block:
+```css
+ul li:last-child{
+color: red;
+}
+```
+
+
 
 
 
