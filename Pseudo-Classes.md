@@ -135,13 +135,59 @@ Consider the same example:
  <li>This is selected<li>
 </ul>
 ```
-This will select the last li under the ul tag and apply the
-required styles on it
-
 If we consider the following CSS block:
 ```css
 ul li:last-child{
 color: red;
+}
+```
+
+This will select the last `li` under the `ul` tag and apply the
+required styles on it.
+
+### :nth-of-type
+
+It represents elements of a given type, based on their position among a group of siblings.
+
+Let's take an example:
+```html
+<ul>
+ <li>This is not selected<li>
+ <li>This is not selected<li>
+ <li>This is not selected<li>
+ <li>This is selected<li>
+ <li>This is not selected<li>
+ <li>This is not selected<li>
+ <li>This is not selected<li>
+ <li>This is selected<li>
+</ul>
+```
+
+Now let's consider a CSS block:
+
+```css
+ul li:nth-of-type(4n){
+color: red;
+}
+```
+This will select every 4th `li` inside a `ul` and changes it to red.
+
+Now let's see how can this be used in a variety of ways:
+
+```css
+/* Odd list items */
+ul li:nth-of-type(2n+1) {
+  color: red;
+}
+
+/* Even list items */
+ul li:nth-of-type(2n) {
+  color: blue;
+}
+
+/* First list item */
+ul li:nth-of-type(1) {
+  font-weight: bold;
 }
 ```
 
