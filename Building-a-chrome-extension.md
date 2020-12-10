@@ -56,4 +56,26 @@ The icons object specifies the file names of the icons to be used while publishi
 Next we specify that the extension is a browser based extension. The `default_icon` represents the icon on the address bar. The default popup represents the popup which would be seen when we click on the icon. It is an html file which we have named as `pop.html`. <br/>
 
 ### Write the html file
+Let's create an html file named `pop.html`, out contents of the popup go here. <br/>
+Put the following contents in it. <br/>
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> First Extension </title>
+    </head>
+    <body>
+        <h2> Hello, welcome to my first chrome extension! </h2>
+    </body>
+</html>
+```
+### Trying our extension
+* Go to your chrome browser and type `chrome://extensions`
+* Turn the developer mode on by toggling the switch.
+* Click on load unpacked button
+* Select the folder where you have made the extension.
+* That's it! Your extension should now be visible on the page.
+* If you click on the puzzle icon in the corner, our `h2` should be visible.
+
+### Adding interactivity
 
