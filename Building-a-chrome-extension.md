@@ -51,6 +51,9 @@ The following are the contents of the `Manifest.json` file. Put these contents i
     }
 }
 ```
-The manifest_version represents the version of the manifest file. The name field in the manifest file specifies the name of the extension. The version specifies the version of the extension. This is the first version of our extension, later versions will have higher numbers. The description is the description of the extension.
-The icons object specifies the file names of the icons to be used while publishing the extension. They need to be in 3 sizes, 128 X 128, 48 X 48  and 16 X 16 to be saved in the same folder, with the corresponding names. <br/>
-Next we specify that the extension is a browser based extension. The default_icon represents the icon on the address bar. The default popup represents the popup which would be seen when we click on the icon. It is an html file which we have named as pop.html
+The `manifest_version` represents the version of the manifest file. The `name` field in the manifest file specifies the name of the extension. The version specifies the version of the extension. This is the first version of our extension, later versions will have higher numbers. The description is the description of the extension.
+The icons object specifies the file names of the icons to be used while publishing the extension. They need to be in 3 sizes, `128 X 128`, `48 X 48`  and `16 X 16` to be saved in the same folder, with the corresponding names. <br/>
+Next we specify that the extension is a browser based extension. The `default_icon` represents the icon on the address bar. The default popup represents the popup which would be seen when we click on the icon. It is an html file which we have named as `pop.html`. <br/>
+
+### Write the html file
+
