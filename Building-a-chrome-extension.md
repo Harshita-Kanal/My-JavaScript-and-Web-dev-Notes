@@ -77,5 +77,18 @@ Put the following contents in it. <br/>
 * That's it! Your extension should now be visible on the page.
 * If you click on the puzzle icon in the corner, our `h2` should be visible.
 
-### Adding interactivity
+We just created a basic chrome extension! Congrats! <br/>
 
+## Exercise
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> First Extension </title>
+    </head>
+    <body>
+        <h2> Hello, welcome to my first chrome extension! </h2>
+    </body>
+</html>
+```
+This is our static html file, as an exercise, try tweaking with this file and see the changes on the popup.
