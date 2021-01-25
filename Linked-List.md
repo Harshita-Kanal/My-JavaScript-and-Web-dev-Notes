@@ -17,3 +17,5 @@ As we take for each element O(N) time to traverse the linked list and find it.
 <br/>
 
 ### Efficient Approach
+This approach we maintain two pointers, the current pointer and the tail pointer, the head pointer traverses the linked list, whenever an instance of the key is found, the links are 
+updated and a node is inserted at the end of linked list using the tail pointer.
