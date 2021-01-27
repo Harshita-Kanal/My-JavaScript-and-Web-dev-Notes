@@ -1,31 +1,52 @@
-
 ## An algorithm to move all occurrences of an element to the end of a Linked List
 In this problem, given a linked list and an input key value, the task is to move all occurrences of the
 given key to the end of the linked list.
+
+```cpp
+Example input:
+1 -> 2 -> 2 -> 3
+Key value: 2
+
+Example output:
+1 -> 3 -> 2 -> 2
+```
 
 ### What are linked lists ?
 Linked List is a data structure. It is a linear data structure where the elements of the linked list are stored in non-consecutive
 memory locations, each node in the linked list contains a data item and pointer to the next node in the linked list.
 
-### Brute Force Approach
+### Representation of linked lists
+In our program we have represented a linked list using a `struct` construct in C++.
+```cpp
+struct node {
+    int data;
+    struct node* next;
+};
+```
+Here, `data` represents the data value in the node and the `next` pointer represents the pointer to the next node in the list.
+
+### Brute Force Solution Approach
 In this approach we find every occurrence of the given key element. For each occurrence of
 the given key element, it is moved to the end of the linked list. <br/>
-Time complexity: The worst case complexity of this brute force approach is given by O(N * N)
-As we take for each element O(N) time to traverse the linked list and find it.
-### Efficient Approach
-This approach we maintain two pointers, the current pointer and the tail pointer, the head pointer traverses the linked list, whenever an instance of the key is found, the links are 
-updated and a node is inserted at the end of linked list using the tail pointer.
+
+__Time complexity__: The worst case complexity of this brute force approach is given by O(N * N), where Nis the number of nodes in the linked list.
+As we take for each element O(N) time to traverse the linked list and find the element to append it.
+
+### Efficient Solution Approach
+This approach we maintain two pointers, the current pointer and the tail pointer, the head pointer traverses the linked list, whenever an instance of the key is found, the links are updated and a node is inserted at the end of linked list using the tail pointer.
 
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
+//node representation
 struct node {
     int data;
     struct node* next;
 
 };
 
+//pointer declaration
 struct node* head;
 struct node* tail = new node;
 struct node* temp = new node;
@@ -40,8 +61,6 @@ void print_data(){
 }
 
 struct node* find_and_append(int key, struct node* head){
-
-
 //Declaration of pointers
 curr = head; //represents the current pointer
 struct node* last = tail;
@@ -92,6 +111,7 @@ int n, num, key;
 cout << "Enter the number of elements" <<endl;
 cin >> n ;
 
+//accepting list from user
 cout << "Enter the elements: " <<endl;
 do {
  cin >> num;
@@ -118,3 +138,5 @@ find_and_append(key, head);
 print_data();
 }
 ```
+
+__Time complexity__: The time complexity of this approach is given by O(N), where, N is the number of nodes in the linked list. As we traverse all the N nodes in one pass.
