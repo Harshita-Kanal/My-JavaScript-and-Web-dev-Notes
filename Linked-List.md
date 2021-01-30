@@ -139,4 +139,28 @@ print_data();
 }
 ```
 
+### A small example to understand the solution
+
+Consider the linked list:
+```cpp
+1 -> 3 -> 2 -> 3
+key: 3
+```
+Initially the `head` pointer would be pointing at the beginning of the linked list and the `tail` pointer would be pointing to the end of linked list.
+The `curr` pointer would be traversing the linked list and the `prevToCurr` would be the trailing pointer, one step behind the `curr` pointer.
+
+```cpp
+1 -> 3 -> 2 -> 3
+    curr       tail
+```
+At the second step, the `curr -> data == 3` which is the key value. A new node `prev` would be containing the data value 3. This new node would be appended to the end of the list. The position of the tail pointer and the links would be updated where, `curr` would point to node conntaining 2, and `prevToCurr` would be at 1.
+The list now becomes.
+```cpp
+1 -> 2 -> 3 -> 3
+   curr       tail
+```
+The `curr` pointer would traverse forward and `prevToCurr` would be one step behind it. When `curr -> data` becomes equal to 3, A procedure similar to the second step is followed and it is appended to the end of the list.
+When `curr == tail` the program ends.
+<br/>
+
 __Time complexity__: The time complexity of this approach is given by O(N), where, N is the number of nodes in the linked list. As we traverse all the N nodes in one pass.
