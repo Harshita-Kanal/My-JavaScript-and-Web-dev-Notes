@@ -41,7 +41,29 @@ When function is invoked its execution context is put in stack, when the executi
 Callstack maintains the order of the execution of execution contexts.
 
 ## Hoisting in Javascript
+The memory is allocated even before we start executing the program. JS Skims through the program and stores `undefined` for variables and full function definitions in the memory in the execution context creation phase.
+```js
+getName()
+console.log(x)
+console.log(getName)
+var x = 1000;
 
-
-
+function getName(){
+  console.log("Hello");
+}
+```
+```js
+Output:
+x = undefined
+function getName(){
+  console.log("Hello");
+}
+```
+For arrow function, `undefined` is allocated in the beginning, it is treated as a variable.
+```js
+getName = () => {
+console.log("Hi")
+}
+```
+Whenever variable is used in function declaration, it returns undefined.
 
